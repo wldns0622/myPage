@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio Web Site for Quakka">
   <meta name="author" content="quakaa">
-  <link rel="icon" type="image/png" href="images/snowflake-solid.png">
+  <link rel="icon" type="image/png" href="images/icon/snowflake-solid-white.png">
   <title>Quakka's Portfolio</title>
   <script src="https://kit.fontawesome.com/69a15e8522.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,7 +20,7 @@
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
-      <img src="./images/snowflake-solid-white.png" alt="메뉴 로고">
+      <img src="./images/icon/snowflake-solid-white.png" alt="메뉴 로고">
       <a href="#">Quakka</a>
     </div>
     <ul class="navbar__menu">
@@ -34,20 +34,97 @@
   </nav>
   <!-- Home -->
   <section id="home">
-    <img src="./images/quakka.jpg" alt="프로필 사진" class="home__avatar">
+    <img src="./images/profile/quakka.jpg" alt="프로필 사진" class="home__avatar">
     <h1 class="home__title">
-      Hello,<br>
-      I`m Quakka dev
+      안녕하세요,<br>
+      저는 Quakka라는 닉네임을 가진 주니어 개발자입니다.
     </h1>
     <h2 class="home__description">
-      I'm studying because I want to be a front-end junior developer.
+      항상 자기주도적이고 능동적으로 성장하는 개발자가 되겠습니다.
     </h2>
     <a href="#" class="home__contact">
       CONTACT ME
     </a>
   </section>
   <!-- About-->
-  <section id="about"></section>
+  <section id="about">
+    <h1>
+      About Me
+    </h1>
+    <p>
+      저는 프론트엔드 주니어개발자를 목표를 하여 공부하고 있습니다.<br>
+      3D영상관련 직업으로 일을하다가 커리어 전환을 위해 그만두었으며,<br>
+      코딩 부트캠프를 통하여 자기주도학습과 자바스크립트로 웹개발 기술들을 배웠습니다.
+    </p>
+    <ul class="about__majors">
+      <li class="major">
+        <div class="major__icon">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="major__title">
+          프론트 엔드
+        </div>
+        <div class="major__description">
+          HTML, CSS, JavaScript,<br>
+          React, Web APIs
+        </div>
+      </li>
+      <li class="major">
+        <div class="major__icon">
+          <i class="fab fa-js-square"></i>
+        </div>
+        <div class="major__title">
+          백 엔드
+        </div>
+        <div class="major__description">
+          JavaScript, Node,<br>
+          Java, Rest APIs
+        </div>
+      </li>
+      <li class="major">
+        <div class="major__icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="major__title">
+          데이터베이스
+        </div>
+        <div class="major__description">
+          Oracle, mySql,<br>
+          Maria, Postgre
+        </div>
+      </li>
+    </ul>
+    <ol class="about__career">
+      <li class="job">
+        <img class="job__logo" src="#" alt="코드스테이츠 로고">
+        <div>
+          <p class="job__name">코드스테이츠 부트캠프 JS과정</p>
+          <p class="job__period">2021.01 - 2021.07</p>
+        </div>
+      </li>
+      <li class="job">
+        <img class="job__logo" src="./images/jobs/kosta.png" alt="코스타 로고">
+        <div>
+          <p class="job__name">Kosta 국비학원 Java과정</p>
+          <p class="job__period">2020.02 - 2020.07</p>
+        </div>
+      </li>
+      <li class="job">
+        <img class="job__logo" src="./images/jobs/Maya.png" alt="마야 로고">
+        <div>
+          <p class="job__name">3D Animation Rigger 프리랜서</p>
+          <p class="job__period">2019.08 - 2019.12</p>
+        </div>
+      </li>
+      <li class="job">
+        <img class="job__logo" src="./images/jobs/school.png" alt="수원과학대학교 로고">
+        <div>
+          <p class="job__name">수원과학대학에서 컴퓨터정보과를 전공함</p>
+          <p class="job__period">2016.03 - 2019.02</p>
+        </div>
+      </li>
+    </ol>
+  </section>
   <!-- Skills -->
   <section id="skills"></section>
   <!-- Work -->
