@@ -222,6 +222,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin: 10px 0;
 }
 
 .job__logo {
