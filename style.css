@@ -446,8 +446,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-
-  height: 150px;
+  /* height: 150px; */
   border-radius: var(--size-border-radius);
 }
 
@@ -494,4 +493,26 @@ p {
     width: 100%;
     display: none;
   }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
 }
