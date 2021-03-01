@@ -28,46 +28,10 @@ navbarMenu.addEventListener('click', (event) => {
     return;
   }
   const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
+  scrollTo.scrollIntoView();
 })
 
-/*
-const home = document.querySelector('#home').offsetTop;
-const about = document.querySelector('#about').offsetTop;
-const skills = document.querySelector('#skills').offsetTop;
-const work = document.querySelector('#work').offsetTop;
-const testimonials = document.querySelector('#testimonials').offsetTop;
-const contact = document.querySelector('#contact').offsetTop;
-const menuItems = document.querySelectorAll('.navbar__menu__item');
-
-for (let menu of menuItems) {
-  menu.addEventListener('click', (e) => {
-    switch (e.target.textContent.toLowerCase()) {
-      case 'home':
-        window.scrollTo({ top: home, behavior: 'smooth' });
-        break;
-      case 'about':
-        window.scrollTo({ top: about, behavior: 'smooth' });
-        break;
-      case 'skills':
-        window.scrollTo({ top: skills, behavior: 'smooth' });
-        break;
-      case 'my work':
-        window.scrollTo({ top: work, behavior: 'smooth' });
-        break;
-      case 'testimonial':
-        window.scrollTo({ top: testimonials, behavior: 'smooth' });
-        break;
-      case 'contact':
-        window.scrollTo({ top: contact, behavior: 'smooth' });
-        break;
-    }
-  });
-}
-*/
-
 const contactBtn = document.querySelector('.home__contact');
-contactBtn.addEventListener('click', (e) => {
-  // e.defaultPrevented();
-  window.scrollTo({ top: contact, behavior: 'smooth' });
+contactBtn.addEventListener('click', (event) => {
+
 });
