@@ -161,11 +161,16 @@ p {
   background: url("./images/background/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 110px;
+
+  /* color: var(--color-white); */
+  /* transition: opacity 300ms; */
+}
+
+#home .section__container {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* color: var(--color-white); */
 }
 
 .home__avatar {

@@ -29,9 +29,22 @@ navbarMenu.addEventListener('click', (event) => {
   }
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView();
-})
-
-const contactBtn = document.querySelector('.home__contact');
-contactBtn.addEventListener('click', (event) => {
-
 });
+
+
+
+// Make home slowly fade to transparent as the window scrolls down
+const home = document.querySelector('#home');
+const homeContainer = document.querySelector('#home>.section__container');
+const homeHeight = home.getBoundingClientRect().height;
+window.addEventListener('scroll', () => {
+  console.log(homeHeight);
+  const currentScroll = window.pageYOffset;
+  let opacity;
+  if (currentScroll < homeHeight) {
+    opacity = 1 - currentScroll / homeHeight;
+  } else {
+    opacity = 0;
+  }
+  homeContainer.style.opacity = opacity;
+})
