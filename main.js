@@ -79,6 +79,13 @@ workCategories.addEventListener('click', (event) => {
   if (!dataWork) {
     return;
   }
+
+  const active = document.querySelector('.category__btn.selected');
+  console.log(active);
+  active.classList.remove('selected');
+  const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+  target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projectList.forEach((project) => {
