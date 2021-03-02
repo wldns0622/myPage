@@ -70,6 +70,10 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  /* 
+  아이폰이면 추가하기
+  padding: 0; 
+  */
 }
 
 /* Typography */
@@ -154,9 +158,9 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 14px;
-  right: 32px;
-  font-size: 24px;
+  top: 10px;
+  right: 24px;
+  font-size: 20px;
   color: var(--color-white);
   display: none;
 }
@@ -197,6 +201,10 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: 5px;
+}
+
+.home__contact:hover {
+  background-color: var(--color-main-light);
 }
 
 /* Section common */
@@ -364,7 +372,7 @@ p {
 } */
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-main);
   border-radius: 50%;
   color: var(--color-white);
   display: inline-block;
@@ -528,6 +536,14 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
   }
@@ -547,25 +563,66 @@ p {
     display: block;
   }
 
+  #about {
+    padding: 16px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    padding: 8px;
+  }
+
   .project {
     flex-grow: 1;
+  }
+
+  #testimonials {
+    padding: 16px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .testimonial:nth-child(even) {
+    flex-direction: column-reverse;
+  } */
+
+  .testimonial__speech-bubble {
+    order: 1;
   }
 
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 10px 0;
+  }
+
+  .arrow-up {
+    right: 25px;
+    bottom: 25px;;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 
 }
