@@ -10,6 +10,7 @@ const arrowUp = document.querySelector('.arrow-up');
 const workCategories = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projectList = document.querySelectorAll('.project');
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 
 // Make navbar transparent when it is on the top
 document.addEventListener('scroll', () => {
@@ -34,6 +35,7 @@ navbarMenu.addEventListener('click', (event) => {
   if (!link) {
     return;
   }
+  navbarMenu.classList.remove('open');
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView();
 });
@@ -97,4 +99,8 @@ workCategories.addEventListener('click', (event) => {
     });
     projectContainer.classList.remove('anim-out');
   }, 300);
+});
+
+navbarToggleBtn.addEventListener('click', (event) => {
+  navbarMenu.classList.toggle('open');
 });
