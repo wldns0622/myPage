@@ -56,9 +56,19 @@ document.addEventListener('scroll', () => {
 // 클래스 주는것과 삭제하는것으로 구현
 document.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
-  let opacity = (homeHeight < currentScroll) ? 1 : 0;
+  let opacity = (homeHeight / 2 < currentScroll) ? 1 : 0;
+  if (opacity) {
+    arrowUp.style.pointerEvents = 'auto';
+  } else {
+    arrowUp.style.pointerEvents = 'none';
+  }
   arrowUp.style.opacity = opacity;
 });
+
+
+arrowUp.addEventListener('click', () => {
+  home.scrollIntoView();
+})
 
 // Projects
 // All 버튼을 클릭한면.
