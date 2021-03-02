@@ -101,6 +101,11 @@ p {
   margin: 4px 0;
 }
 
+
+.arrow-up i {
+  cursor: pointer;
+}
+
 /* Navbar */
 #navbar {
   width: 100%;
@@ -378,6 +383,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--anumation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -389,6 +401,11 @@ p {
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-white);
+  transition: opacity var(--anumation-duration);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -496,6 +513,18 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
 }
+
+/* Arrow up button */
+.arrow-up{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  color: var(--color-main-light);
+  transition: opacity 1s;
+  border-radius: 50%;
+}
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {

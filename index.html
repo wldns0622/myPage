@@ -161,7 +161,7 @@
                 <div class="skill__value" style="width: 95%;"></div>
               </div>
             </li>
-            <li class="skill">
+            <li class="skill" data-skill="front">
               <div class="skill__description">
                 <span>CSS</span>
                 <span>95%</span>
@@ -170,7 +170,7 @@
                 <div class="skill__value" style="width: 95%;"></div>
               </div>
             </li>
-            <li class="skill">
+            <li class="skill" data-skill="front">
               <div class="skill__description">
                 <span>JavaScript</span>
                 <span>90%</span>
@@ -241,13 +241,13 @@
         Projects
       </h3>
       <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">3</span></button>
-        <button class="category__btn">Publishing<span class="category__count">3</span></button>
-        <button class="category__btn">Web App<span class="category__count">0</span></button>
-        <button class="category__btn">Etc<span class="category__count">0</span></button>
+        <button class="category__btn" data-work="all">All<span class="category__count">3</span></button>
+        <button class="category__btn" data-work="front">Publishing<span class="category__count">3</span></button>
+        <button class="category__btn" data-work="back">Web App<span class="category__count">1</span></button>
+        <button class="category__btn" data-work="etc">Etc<span class="category__count">2</span></button>
       </div>
       <div class="work__projects">
-        <a href="#" class="project" target="_blank">
+        <a href="#" class="project" target="_blank" data-work='front'>
           <img class="project__img" src="./images/projects/complete_form.png" alt="">
           <div class="project__description">
             <h3>
@@ -260,7 +260,7 @@
             </span>
           </div>
         </a>
-        <a href="#" class="project" target="_blank">
+        <a href="#" class="project" target="_blank" data-work='back'>
           <img class="project__img" src="./images/projects/complete_form.png" alt="">
           <div class="project__description">
             <h3>
@@ -273,7 +273,46 @@
             </span>
           </div>
         </a>
-        <a href="#" class="project" target="_blank">
+        <a href="#" class="project" target="_blank" data-work='etc'>
+          <img class="project__img" src="./images/projects/complete_form.png" alt="">
+          <div class="project__description">
+            <h3>
+              <!-- 프로젝트명 -->
+              login-form
+            </h3>
+            <span>
+              <!-- 프로젝트 설명 -->
+              로그인 폼과 유효성검사
+            </span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-work='etc'>
+          <img class="project__img" src="./images/projects/complete_form.png" alt="">
+          <div class="project__description">
+            <h3>
+              <!-- 프로젝트명 -->
+              login-form
+            </h3>
+            <span>
+              <!-- 프로젝트 설명 -->
+              로그인 폼과 유효성검사
+            </span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-work='front'>
+          <img class="project__img" src="./images/projects/complete_form.png" alt="">
+          <div class="project__description">
+            <h3>
+              <!-- 프로젝트명 -->
+              login-form
+            </h3>
+            <span>
+              <!-- 프로젝트 설명 -->
+              로그인 폼과 유효성검사
+            </span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-work='front'>
           <img class="project__img" src="./images/projects/complete_form.png" alt="">
           <div class="project__description">
             <h3>
@@ -347,6 +386,11 @@
       2021 Quakka - All rights reserved
     </span>
   </footer>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
 </body>
 
 </html>
